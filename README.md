@@ -1,16 +1,21 @@
-# crud
+# Crud em Flutter
 
-A new Flutter project.
+Crud de cadastro de usuários em flutter.
 
-## Getting Started
+## Pré-requisitos
 
-This project is a starting point for a Flutter application.
+- Flutter SDK instalado
+- Dart SDK instalado
 
-A few resources to get you started if this is your first Flutter project:
+## Instalação
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone este repositório em sua máquina local:
+2. flutter packages get (obtem dependencias)
+3. flutter run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## App
+![Captura de tela 2023-07-23 231019](https://github.com/VeSmaha/Crud-Flutter/assets/105559191/52c9c8b4-9856-430b-933d-fd989431683f)
+![Captura de tela 2023-07-23 231046](https://github.com/VeSmaha/Crud-Flutter/assets/105559191/efa1b5e1-e1b4-4fbd-9a4d-4333daae138d)
+![Captura de tela 2023-07-23 231121](https://github.com/VeSmaha/Crud-Flutter/assets/105559191/a6fb2052-e65f-4caa-99ff-5ad2514114ff)
+
+
