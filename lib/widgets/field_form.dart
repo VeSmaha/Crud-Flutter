@@ -19,7 +19,7 @@ class FieldForm extends StatelessWidget {
       controller: controller,
       decoration: InputDecoration(
         filled: true,
-        fillColor: Colors.white,
+        // fillColor: Colors.white,
         labelText: label,
         border: OutlineInputBorder(),
       ),

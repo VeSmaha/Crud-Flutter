@@ -62,9 +62,9 @@ class _UserformState extends State<Userform> {
             title: Align(alignment: Alignment.center, child: Text(title)),
             actions: [
               Container(
-                  decoration: BoxDecoration(
-                    color: Colors.black,
-                  ),
+                  // decoration: BoxDecoration(
+                  //   color: Colors.black,
+                  // ),
                   child: IconButton(
                     onPressed: () {
                       userProvider.indexUser = null;
@@ -73,7 +73,7 @@ class _UserformState extends State<Userform> {
                     icon: Icon(Icons.home),
                   )),
             ],
-            backgroundColor: Colors.black,
+            // backgroundColor: Colors.black,
           ),
           body: Center(
               child: Padding(

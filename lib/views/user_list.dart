@@ -1,5 +1,7 @@
+import 'package:crud/main.dart';
 import 'package:crud/provider/user_provider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../models/user_model.dart';
 
@@ -15,7 +17,7 @@ class UserList extends StatelessWidget {
     
     return Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.black,
+          // backgroundColor: Colors.black,
           title: Align(
             alignment: Alignment.center,
             child: Text('List'),
@@ -25,7 +27,11 @@ class UserList extends StatelessWidget {
             onPressed: () {
               Navigator.popAndPushNamed(context, '/form');
             },
+            
           ),
+          actions: [
+            CustomSwitch(),
+          ],
         ),
         body: ListView.builder(
             itemCount: usersL,
@@ -76,5 +82,27 @@ class UserList extends StatelessWidget {
                     ),
                   ),
                 )));
+  }
+}
+
+class CustomSwitch extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+     final appController = Provider.of<AppController>(context);
+    return Switch(
+      value: appController.isDark,
+      onChanged: (value) {
+        appController.changeTheme();
+      },
+    );
+  }
+}
+
+class AppController extends ChangeNotifier {
+  static AppController instance = AppController();
+  bool isDark = false;
+  changeTheme() {
+    isDark = !isDark;
+    notifyListeners();
   }
 }
